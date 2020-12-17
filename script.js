@@ -1,12 +1,14 @@
+if('serviceWorker' in navigator) {
+    navigator.serviceWorker.register('./sw.js')
+    .then(function() { console.log("Service Worker Registered"); });
+};
 var pictures = document.getElementById("pictures");
 for(let i = 0; i < 5 ; i++){
     var picture = document.createElement("img");
     picture.setAttribute("src", "https://picsum.photos/200");
     pictures.append(picture);
 }
-if('serviceWorker' in navigator) {
-    navigator.serviceWorker.register('./sw.js');
-};
+
 
 
 //TODO adapter ça à ce que j'ai fait au-dessus
