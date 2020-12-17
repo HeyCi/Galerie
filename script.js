@@ -4,6 +4,9 @@ for(let i = 0; i < 5 ; i++){
     picture.setAttribute("src", "https://picsum.photos/200");
     pictures.append(picture);
 }
+if('serviceWorker' in navigator) {
+    navigator.serviceWorker.register('./sw.js');
+};
 
 
 //TODO adapter ça à ce que j'ai fait au-dessus
