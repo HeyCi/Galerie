@@ -1,5 +1,5 @@
 var cacheName = 'monCache';
-var appShellFiles = [
+var contentToCache = [
     '/',
     '/index.html',
     '/script.js'
